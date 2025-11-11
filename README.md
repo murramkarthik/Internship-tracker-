@@ -156,7 +156,7 @@ You can now interact with the web app.
 
 ## 👨‍💻 Author
 
-**Developed by:** [Your Name]  
+**Developed by:** MSS Karthik 
 **Tech Stack:** Flask + HTML + CSS + JavaScript  
 **Version:** 1.0.0  
 
