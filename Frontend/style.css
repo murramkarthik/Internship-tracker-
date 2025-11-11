@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s ease;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(120deg, #1b1b2f, #16213e, #0f3460);
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+header input {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.form-container, .list-container {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 25px;
+  width: 40%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.form-container h2, .list-container h2 {
+  text-align: center;
+  color: #00adb5;
+}
+
+input, select, button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background: #00adb5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #05c3cf;
+}
+
+#internshipList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.internship-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: translateY(0);
+}
+
+.internship-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.internship-card h3 {
+  color: #00adb5;
+  margin: 5px 0;
+}
+
+.internship-card span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.actions {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.actions button {
+  background: #222831;
+  color: white;
+  border-radius: 6px;
+  padding: 5px 8px;
+  border: none;
+}
+
+.actions button:hover {
+  background: #00adb5;
+}

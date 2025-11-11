@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Internship Tracker</h1>
+    <input type="text" id="searchBox" placeholder="Search internships..." />
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Add Internship</h2>
+      <form id="internshipForm">
+        <input type="text" id="company" placeholder="Company" required />
+        <input type="text" id="role" placeholder="Role" required />
+        <input type="text" id="duration" placeholder="Duration" required />
+        <select id="status">
+          <option value="Ongoing">Ongoing</option>
+          <option value="Completed">Completed</option>
+        </select>
+        <button type="submit">Add Internship</button>
+      </form>
+    </section>
+
+    <section class="list-container">
+      <h2>My Internships</h2>
+      <div id="internshipList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
